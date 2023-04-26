@@ -1,3 +1,8 @@
 body {
     background-color: rgb(50, 50, 50);
 }
+.col {
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+}
