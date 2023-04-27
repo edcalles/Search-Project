@@ -23,7 +23,6 @@ body {
     }
     .col {
         justify-content: center;
-        margin-left: 120px;
     }
     
 }
@@ -31,7 +30,7 @@ body {
     .col {
         margin-top: 10px;
         height: 200px;
-        width: auto;
+        width: 200px;
     }
     .row {
         width: auto;
