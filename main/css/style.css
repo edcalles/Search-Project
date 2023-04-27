@@ -1,12 +1,12 @@
 body {
-    background-color: rgb(50, 50, 50);
+    background-color: #191825;
     margin-top: 60px;
 }
-.btn-success {
-    background-color: dodgerblue;
+.btn-primary {
+    background-color: #E384FF;
 }
-.btn-success:hover {
-    background-color: aqua;
+.btn-primary:hover {
+    background-color: #FFA3FD;
 }
 .col {
     height: 300px;
