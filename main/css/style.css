@@ -2,8 +2,42 @@ body {
     background-color: rgb(50, 50, 50);
     margin-top: 60px;
 }
+.btn-success {
+    background-color: dodgerblue;
+}
+.btn-success:hover {
+    background-color: aqua;
+}
 .col {
     height: 300px;
     width: 300px;
     background-color: aqua;
+}
+@media (max-width: 768px) {
+    .container {
+        width: auto;
+    }
+    .row {
+        display: block;
+        
+    }
+    .col {
+        justify-content: center;
+        margin-left: 120px;
+    }
+    
+}
+@media (max-width: 320px) {
+    .col {
+        margin-top: 10px;
+        height: 200px;
+        width: auto;
+    }
+    .row {
+        width: auto;
+    }
+    .previous .next {
+        display: none;
+    }
+    
 }
