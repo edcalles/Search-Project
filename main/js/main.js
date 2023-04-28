@@ -5,9 +5,13 @@ var query = "&q=rainbow"
 */
 $(document).ready(()=>{ 
     $("#submit").click(()=>{
-        alert('clicked!')
+        let userInput = $("#search").val();
+        alert(userInput)
+        $.ajax({
+            url: `https://api.giphy.com/v1/gifs/search?api_key=UP6732Wk58BBMmvGPzAAAyF8Hr07zfaj&q=${userInput}&limit=25&offset=0&rating=g&lang=en`
+        })
+            .done((res)=>{
+                console.log("res", res.data)
+            })
     })
-    $.ajax({
-        url: "http://api.giphy.com/v1/gifs/search?&api_key=UP6732Wk58BBMmvGPzAAAyF8Hr07zfaj"
-    });
 });
