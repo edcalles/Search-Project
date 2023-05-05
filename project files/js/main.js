@@ -5,6 +5,7 @@ var query = "&q=rainbow"
 */
 $(document).ready(()=>{ 
     $("#submit").click(()=>{
+        $("#gifs").empty();
         let userInput = $("#search").val();
         let userLimit = $("#number").val();
         $.ajax({
@@ -16,7 +17,7 @@ $(document).ready(()=>{
                 $.each(gif, (i, e)=>{
                     let link = e.images.original.url
                     console.log("url", link)
-                    $("body").append(`<img class="col col-sm mr-sm-2 my-sm-2" src="${link}" alt="gif"/>`)
+                    $("#gifs").append(`<img class="col col-sm ml-auto mr-auto my-1" src="${link}" alt="gif"/>`)
                     console.log("index", i, "element", e)
                 })
             })

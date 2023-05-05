@@ -2,6 +2,9 @@ body {
     background-color: #191825;
     margin-top: 60px;
 }
+section {
+    margin-left: auto;
+}
 .btn-primary {
     background-color: #E384FF;
 }
@@ -11,8 +14,23 @@ body {
 .col {
     height: 300px;
     width: 300px;
-    background-color: aqua;
+    background-color: #191825;
 }
+@media (max-width:1240px) {
+    .col{
+        height: 310px;
+        width: 310px;
+        
+    }
+    img {
+        margin-left: 10px;
+        
+    }
+    section {
+        margin-right: -10px;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         width: auto;
@@ -27,16 +45,10 @@ body {
     
 }
 @media (max-width: 320px) {
-    .col {
+    #gifs {
+        display: inline;
+        justify-content: center;
         margin-top: 10px;
-        height: 200px;
-        width: 200px;
+        margin-left: px;
     }
-    .row {
-        width: auto;
-    }
-    .previous .next {
-        display: none;
-    }
-    
 }
